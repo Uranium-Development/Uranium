@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Uranium</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" id="theme" href="themes/light.css">
+        <script defer src="prime.js" type="module"></script>
+    </head>
+    <body>
+        <main id="main">
+            <div id="container">
+                <button id="close" onclick="window.uranium.close();"></button>
+                <div id="left"></div>
+                <div id="editor">
+                    <div class="tabs">
+                        <div class="tabtop">
+                            <div id="ltab">
+                                <button class="tab">untitled*</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="editorHolder">
+                        <div class="editorRows">
+                            <div class="editorColumn editorBackground">
+                                <div id="lineCount" class="line-count-text"></div>
+                                <div id="primary" class="editor-plain-text editor-font">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="controlBar">
+                    <p id="lineCol">Ln 0, Col 0</p>
+                    <button id="lang">Plain Text</button>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
