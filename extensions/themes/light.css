@@ -1,0 +1,58 @@
+/* Theme Name: light */
+/* Created By: Fynotix */
+
+.editor-background {
+    background-color: #fff;
+}
+
+.editor-plain-text {
+    color: #000;
+}
+
+.indent-guide {
+    background-color: #888;
+}
+
+.control-bar {
+    background-color: #bbbbbb;
+}
+
+.control-bar-text {
+    color: #000;
+}
+
+.line-count-text {
+    color: #000;
+}
+
+.keywords {
+    color: #0000ff;
+}
+
+.operator {
+    color: #999;
+}
+
+.number {
+    color: #ff9900;
+}
+
+.function-title {
+    color: #6161ff;
+}
+
+.string {
+    color: #00ff00;
+}
+
+.important-operator {
+    color: #555;
+}
+
+.comments {
+    color: #00aa00;
+}
+
+.caret {
+    background-color: black;
+}

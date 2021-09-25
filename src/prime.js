@@ -1,7 +1,7 @@
 var editor = document.getElementById("primary");
 
-import { getUpdated } from "D:\\Code\\U\\Uranium\\src\\languages\\lua.js";
-import { textbox } from "D:\\Code\\U\\Uranium\\src\\scripts\\editController.js";
+import { getUpdated } from "..\\languages\\lua.js";
+import { textbox } from ".\\scripts\\editController.js";
 
 var wait = (time) => {
     return new Promise((resolve) => {
