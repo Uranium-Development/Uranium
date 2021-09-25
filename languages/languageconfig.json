@@ -1,3 +1,0 @@
-{
-    "lua": {"title": "lua", "ext": ".lua", "run": "lua.js"}
-}
