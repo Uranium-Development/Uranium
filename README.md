@@ -2,14 +2,13 @@
 
 [![URANIUM](https://raw.githubusercontent.com/Dollor-Lua/Uranium/82c787953e6d726babf2ca36cf8b42a63c1ea18d/src/images/UraniumLogo.svg)](https://github.com/Dollor-Lua/Uranium/search?l=javascript&type=code)
 [![Latest](https://img.shields.io/badge/Latest-1.0.0-brightgreen)](https://github.com/Dollor-Lua/Uranium/releases)
-[![Dependancies](https://img.shields.io/badge/Dependencies-up%20to%20date-brightgreen)](https://github.com/Dollor-Lua/Uranium/releases)
-[![Discord](https://img.shields.io/discord/891102130868453426?color=%235865f2&label=Discord&logo=discord&logoColor=white)](https://discord.gg/twPZtVSpbW)
-
 [![Issues](https://img.shields.io/github/issues/Uranium-Development/Uranium)](https://www.github.com/Uranium-Development/Uranium/issues)
 [![License](https://img.shields.io/github/license/Uranium-Development/Uranium)](https://www.github.com/Uranium-Development/Uranium/blob/main/LICENSE)
 
 [![Electron Version](https://img.shields.io/github/package-json/dependency-version/Uranium-Development/Uranium/dev/electron/main)](https://github.com/electron/electron)
 [![Electron Forge](https://img.shields.io/github/package-json/dependency-version/Uranium-Development/Uranium/dev/@electron-forge/cli/main?label=electron%20forge)](https://github.com/electron/electron)
+
+[![Discord](https://img.shields.io/discord/891102130868453426?color=%235865f2&label=Discord&logo=discord&logoColor=white)](https://discord.gg/twPZtVSpbW)
 
 Welcome to the official repository of Uranium. Now, what is Uranium? Uranium is the 92nd element
 on the period table with an atomic mass of 238.02891u. Haha, just kidding, Uranium is actually an
