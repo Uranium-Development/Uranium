@@ -59,3 +59,9 @@ In our discord server you can:
 -   Report bugs
 -   Socialize
 -   And much, much more!
+
+## License
+
+(c) 2021-2031 Starlight Interactive, Uranium
+
+view LICENSE for more details.
