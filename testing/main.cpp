@@ -127,7 +127,7 @@ int main(int argc, char **argv) {
 		system("yarn make");
 		printf("\033[1;32m[Uranium]:\033[1;0m Make completed, check your dist folder.\n");
 	} else if (string(argv[1]).substr(0,4) == "test") {
-		printf("\033[1;32m[Uranium]:\033[1;0m Starting Test\n");
+		printf("\033[1;32m[Uranium]:\033[1;0m Starting test\n");
 		printf("\033[1;32mOS\t\t-  Win32\033[1;0m\n");
 		printf("\033[1;32mArch\t\t-  %s\033[1;0m\n", arch.c_str());
 		printf("\033[1;32mTestType\t-  APP\033[1;0m\n");
