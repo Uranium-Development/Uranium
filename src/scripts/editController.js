@@ -1,7 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.textbox = void 0;
-class textbox {
+export class textbox {
     constructor(element, DOMClass, caretClass) {
         this.focused = false;
         this.listening = false;
@@ -146,4 +143,3 @@ class textbox {
         }
     }
 }
-exports.textbox = textbox;
