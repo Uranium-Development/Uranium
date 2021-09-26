@@ -11,6 +11,8 @@ export class textbox {
 		this.currentLine = 0;
 		this.linePos = 0;
 
+		this.lineCounts = { 0: 0 };
+
 		this.text = "";
 		this.lastText = "";
 
@@ -19,7 +21,7 @@ export class textbox {
 		// generator
 		this.DOM = document.createElement("div");
 		this.DOM.classList.add(DOMClass);
-		this.DOM.style = "white-space: pre-wrap";
+		this.DOM.style = "white-space: nowrap; overflow-x: auto;";
 
 		this.caretCont = document.createElement("div");
 		this.caretCont.classList.add(DOMClass);
@@ -35,6 +37,44 @@ export class textbox {
 
 		// extras; private
 		this.caretUpdates = 0;
+	}
+
+	checkPosX() {
+		if (this.cursorPos > this.text.length) {
+			this.cursorPos = this.text.length;
+		}
+		if (this.linePos > this.lineCounts[this.currentLine]) {
+			this.linePos = this.lineCounts[this.currentLine];
+		}
+
+		if (this.cursorPos < 0) {
+			this.cursorPos = 0;
+		}
+		if (this.linePos < 0) {
+			this.linePos = 0;
+		}
+	}
+
+	checkPosY() {
+		if (this.currentLine > this.lineCounts.length - 1) {
+			this.currentLine = this.lineCounts.length - 1;
+		}
+
+		if (this.currentLine < 0) {
+			this.currentLine = 0;
+		}
+	}
+
+	getLine() {
+		return this.currentLine;
+	}
+
+	getTruePos() {
+		return this.cursorPos;
+	}
+
+	getCursorPos() {
+		return this.linePos;
 	}
 
 	focus() {
@@ -86,6 +126,8 @@ export class textbox {
 					}
 
 					if (registered) {
+						this.checkPosX();
+						this.checkPosY();
 						this.lastType = Math.round(new Date().getTime() / 1000);
 					}
 				}
@@ -111,8 +153,8 @@ export class textbox {
 		if (this.caretUpdates >= 100 && this.focused) {
 			this.caretUpdates = 0;
 			if (
-				this.caret.classList.contains("caret-blink") &&
-				Math.round(new Date().getTime() / 1000) - this.lastType > 1
+				this.caret.classList.contains("caret-blink") ||
+				Math.round(new Date().getTime() / 1000) - this.lastType < 1
 			) {
 				this.caret.classList.remove("caret-blink");
 			} else {

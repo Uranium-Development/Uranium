@@ -1,4 +1,5 @@
 var editor = document.getElementById("primary");
+var linecol = document.getElementById("lineCol");
 
 import { getUpdated } from "../languages/lua.js";
 import { textbox } from "./scripts/editController.js";
@@ -50,6 +51,7 @@ async function mainloop() {
 		}
 
 		primary.Update();
+		linecol.innerText = `Ln ${primary.getLine()}, Col ${primary.getCursorPos()}`;
 	}
 }
 

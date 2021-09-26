@@ -1,0 +1,15 @@
+uranium_development-uranium
+
+THIRD-PARTY SOFTWARE NOTICES AND INFORMATION
+Do Not Translate or Localize
+
+This project incorporates components from the projects listed below. The original copyright notices and the licenses under which Uranium-Development received such components are set forth below. Uranium-Development reserves all rights not expressly granted herein, whether by implication, estoppel or otherwise.
+
+1.
+
+
+%% (1) NOTICES AND INFORMATION BEGIN HERE
+=========================================
+No notice found
+=========================================
+END OF (1) NOTICES AND INFORMATION
