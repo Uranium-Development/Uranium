@@ -11,3 +11,5 @@ LICENSE eol=crlf
 *.ts linguist-detectable=true
 *.bat linguist-detectable=false
 *.sh linguist-detectable=false
+*.cpp linguist-detectable=false
+*.coffee linguist-detectable=false
