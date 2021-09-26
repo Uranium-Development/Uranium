@@ -10,9 +10,4 @@ LICENSE eol=crlf
 
 **/*.json linguist-language=jsonc
 *.d.ts linguist-language=ts
-
-*.ts linguist-detectable=true
-*.bat linguist-detectable=false
-*.sh linguist-detectable=false
-*.cpp linguist-detectable=false
-*.coffee linguist-detectable=false
+*.sh linguist-language=bat
