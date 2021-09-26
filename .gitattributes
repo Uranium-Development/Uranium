@@ -8,3 +8,4 @@ LICENSE eol=crlf
 *.sh eol=lf
 *.rtf -text
 **/*.json linguist-language=jsonc
+*.ts linguist-language=ts
