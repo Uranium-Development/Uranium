@@ -1,7 +1,7 @@
 var editor = document.getElementById("primary");
 var linecol = document.getElementById("lineCol");
 
-import { getUpdated } from "../languages/lua.js";
+// import { getUpdated } from "../languages/lua.js";
 import { textbox } from "./scripts/editController.js";
 // import dynamicLoad from "./dynamicLoading.js";
 

@@ -1,11 +1,14 @@
-import themes from "../../extensions/themes/themes.js";
-
+import themes from "../../extensions/themes/themes";
 export const requestTheme = (themeName) => {
-	themes.forEach((theme) => {
-		if (theme.name === themeName) {
-			return "../extensions/themes/" + theme.file;
-		}
-	});
-
-	return ["../extensions/themes/" + theme, "No theme found"];
+    var theme = "None";
+    themes.forEach((theme) => {
+        if (theme.name === themeName) {
+            theme = "../extensions/themes/" + theme.file;
+        }
+    });
+    return theme;
+};
+export const loadTheme = (themePath) => {
+    const t = document.getElementById("ctheme");
+    t.setAttribute("href", themePath);
 };
