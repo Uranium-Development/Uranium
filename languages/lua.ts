@@ -21,6 +21,7 @@ var keywords = [
     "until",
     "while",
 ];
+
 var predefined = [
     "assert",
     "collectgarbage",
@@ -156,16 +157,17 @@ var predefined = [
     "debug.setupvalue",
     "debug.traceback",
 ];
-export const getUpdated = (text) => {
+
+export const getUpdated = (text: string) => {
     var newStr = "";
     var cnstr = "";
     text.split(/[.]+/).forEach((char) => {
         if (/[-\!\$%\^&\*\(\)_\+|~=`\{\}\[\]:";'\<\>\?\,\.\/]/.test(char)) {
             cnstr += `<span class="operator">${char}</span>`;
-        }
-        else {
+        } else {
             cnstr += char;
         }
+
         if (/[-\!\$%\^&\*\(\)_\+|~=`\{\}\[\]:";'\<\>\?\,\.\/\s]/.test(char)) {
             // parse by keywords
             keywords.forEach((val) => {
@@ -175,9 +177,11 @@ export const getUpdated = (text) => {
                     cnstr = "";
                 }
             });
+
             newStr += cnstr;
             cnstr = "";
         }
+
         // parse by built-ins
         predefined.forEach((val) => {
             if (val == cnstr) {
@@ -187,7 +191,9 @@ export const getUpdated = (text) => {
             }
         });
     });
+
     newStr += cnstr;
     console.log(newStr);
+
     return newStr;
 };

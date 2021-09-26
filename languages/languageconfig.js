@@ -1,3 +1,3 @@
 export default {
-	lua: { title: "lua", ext: ".lua", run: "lua.js" },
+    lua: { title: "lua", ext: ".lua", run: "lua.js" },
 };
