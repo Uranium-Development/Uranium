@@ -151,3 +151,13 @@ html {
 .caret-blink {
 	opacity: 0;
 }
+
+#commandBar {
+	width: 50%;
+	height: 40px;
+	left: 50%;
+	top: 10%;
+	transform: translate(-50%, 0%);
+	display: none;
+	pointer-events: none;
+}

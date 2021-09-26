@@ -1,3 +1,4 @@
+echo "$(tput setaf 2)[Uranium]:$(tput setaf 7) Running uranium.sh"
 if [ $# -eq 0 ]; then
 	echo -e "$(tput setaf 2)          _______  _______  _       _________          _______ \n|\\     /|(  ____ )(  ___  )( (    /|\\__   __/|\\     /|(       )\n| )   ( || (    )|| (   ) ||  \\  ( |   ) (   | )   ( || () () |\n| |   | || (____)|| (___) ||   \\ | |   | |   | |   | || || || |\n| |   | ||     __)|  ___  || (\\ \\) |   | |   | |   | || |(_)| |\n| |   | || (\\ (   | (   ) || | \\   |   | |   | |   | || |   | |\n| (___) || ) \\ \\__| )   ( || )  \\  |___) (___| (___) || )   ( |\n(_______)|/   \\__/|/     \\||/    )_)\\_______/(_______)|/     \\|$(tput setaf 7)"
 	echo -e "\n\nWelcome to the uranium quick setup exe. You can run any of the commands below.\n(uranium.exe--main.cpp was created by Fynotix)\n"

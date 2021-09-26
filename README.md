@@ -37,10 +37,12 @@ Uranium will automatically update when a new release is available.
 #### Linux
 
 Unfortunately, Linux is currently not supported.
+Although, you can build the application yourself. See "cli-info.ipynb" for more information.
 
 #### MacOS
 
 Unfortunately, Mac is currently not supported.
+Although, you can build the application yourself. See "cli-info.ipynb" for more information.
 
 #### Other operating systems
 
@@ -51,13 +53,13 @@ Currently we will not support operating systems outside of MacOS, Linux, and Win
 You can join our [Discord Server](https://discord.gg/twPZtVSpbW)!
 In our discord server you can:
 
--   Introduce yourself
--   Show off some of your projects
--   Get help on the Uranium editor
--   Suggest ideas
--   Report bugs
--   Socialize
--   And much, much more!
+- Introduce yourself
+- Show off some of your projects
+- Get help on the Uranium editor
+- Suggest ideas
+- Report bugs
+- Socialize
+- And much, much more!
 
 ## License
 

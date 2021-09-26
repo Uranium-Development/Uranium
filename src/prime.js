@@ -3,7 +3,12 @@ var linecol = document.getElementById("lineCol");
 
 import { getUpdated } from "../languages/lua.js";
 import { textbox } from "./scripts/editController.js";
+// import dynamicLoad from "./dynamicLoading.js";
 
+// import all scripts
+import "./toolbar.js";
+
+// real code
 var wait = (time) => {
 	return new Promise((resolve) => {
 		setTimeout(resolve, time * 1000);

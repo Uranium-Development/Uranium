@@ -1,1 +1,1 @@
-D:\\Code\\U\\Uranium\\testing\\uranium.sh test
+( exec "./testing/uranium.sh" test )
