@@ -62,6 +62,15 @@ if [ "$1" == '--ctest' ]; then
  	echo ""
 	echo "$(tput setaf 2)[Uranium]:$(tput setaf 7) Looks like your using cygwin! Please run the uranium.exe file instead as this counts as a windows device."
 	echo "$(tput setaf 2)[Uranium]:$(tput setaf 7) If you are running win32 (Windows 10) please run the uranium.exe file instead."
+	echo ""
+	echo "NO ARG:"
+	echo -e "$(tput setaf 2)          _______  _______  _       _________          _______ \n|\\     /|(  ____ )(  ___  )( (    /|\\__   __/|\\     /|(       )\n| )   ( || (    )|| (   ) ||  \\  ( |   ) (   | )   ( || () () |\n| |   | || (____)|| (___) ||   \\ | |   | |   | |   | || || || |\n| |   | ||     __)|  ___  || (\\ \\) |   | |   | |   | || |(_)| |\n| |   | || (\\ (   | (   ) || | \\   |   | |   | |   | || |   | |\n| (___) || ) \\ \\__| )   ( || )  \\  |___) (___| (___) || )   ( |\n(_______)|/   \\__/|/     \\||/    )_)\\_______/(_______)|/     \\|$(tput setaf 7)"
+	echo -e "\n\nWelcome to the uranium quick setup exe. You can run any of the commands below.\n(uranium.exe--main.cpp was created by Fynotix)\n"
+	echo -e "\nBasic Commands:"
+	echo "	uranium install			Installs all the required NPM packages via yarn."
+	echo "	uranium build			Builds uranium into a single executable."
+	echo "	uranium test			Runs uranium without packaging or building it."
+	echo -e "\n\nIt is possible to not use this executable, but if you wish for efficiency and safety, run the commands through this file."
 	exit 1
 fi
 
