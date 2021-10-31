@@ -2,7 +2,7 @@ var editor = document.getElementById("primary");
 var linecol = document.getElementById("lineCol");
 
 // import { getUpdated } from "../languages/lua.js";
-import { textbox } from "./scripts/editController.js";
+// import { textbox } from "./scripts/editController.js";
 // import dynamicLoad from "./dynamicLoading.js";
 
 // import all scripts
@@ -15,6 +15,7 @@ var wait = (time: number) => {
 	});
 };
 
+/*
 var primary = new textbox(editor!, "primary", "caret");
 
 editor!.onmousedown = function (e) {
@@ -24,7 +25,9 @@ editor!.onmousedown = function (e) {
 
 window.onmousedown = function () {
 	primary.escape();
-};
+};*/
+
+window.editor = ace.edit("primary");
 
 // mainloops
 async function mainloop() {
@@ -58,8 +61,10 @@ async function mainloop() {
 			window.uranium.updateWindowPositionToMouse();
 		}
 
+		/*
 		primary.Update();
 		linecol!.innerText = `Ln ${primary.getLine()}, Col ${primary.getCursorPos()}`;
+		*/
 	}
 }
 
